@@ -10,6 +10,10 @@ from colorama import init
 
 init()
 
+def exit():
+    print("[!] Exiting [!]")
+    sys.exit() 
+    
 def checkinter():
     wlan_pattern = re.compile("^wlan[0-9]+")
     check_wifi_result = wlan_pattern.findall(subprocess.run(["iwconfig"], capture_output=True).stdout.decode())
