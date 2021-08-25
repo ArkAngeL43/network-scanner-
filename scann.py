@@ -1,14 +1,19 @@
-import os 
 import re 
-import sys
-import subprocess
+import sys 
 import scapy.all as scapy
+import os 
+import time as t 
 import socket 
-import colorama
-import time as t
-import scapy 
+import colorama 
+import psutil
 from colorama import Fore 
 from colorama import init
+import datetime 
+import pyfiglet 
+from datetime import datetime
+import subprocess
+from os import system
+from sys import stdout
 
 init()
 
